@@ -19,3 +19,4 @@ def valid_parentheses(string):
             return True
     except:
         return False
+
