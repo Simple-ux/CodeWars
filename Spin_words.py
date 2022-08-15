@@ -11,6 +11,6 @@
 
 def spin_words(sentence):
     splited = sentence.split()
-    print(" ".join([word[::-1] if len(word) >= 5 else word for word in splited ]))
+    return " ".join([word[::-1] if len(word) >= 5 else word for word in splited ])
 
 spin_words( "Hey fellow warriors")

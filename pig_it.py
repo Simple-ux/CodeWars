@@ -7,6 +7,6 @@
 
 def pig_it(text):
     splited = text.split()
-    print(" ".join([word[1:] + word[0] + "ay" if word[0].isalpha() else word[0]  for word in splited]))
+    return " ".join([word[1:] + word[0] + "ay" if word[0].isalpha() else word[0]  for word in splited])
 
 pig_it('O tempora o mores !')

@@ -10,7 +10,7 @@ def find_outlier(integers):
         return res_1[0]
     else:
         return res_2[0]
-    
+
 # Tests
 # print(find_outlier([2, 4, 6, 8, 10, 3]))
 # print(find_outlier([2, 4, 0, 100, 4, 11, 2602, 36]))
