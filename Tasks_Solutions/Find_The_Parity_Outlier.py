@@ -11,5 +11,3 @@ def find_outlier(integers):
     else:
         return res_2[0]
 
-# Tests
-

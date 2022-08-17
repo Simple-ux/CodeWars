@@ -12,10 +12,3 @@
 def spin_words(sentence):
     splited = sentence.split()
     return " ".join([word[::-1] if len(word) >= 5 else word for word in splited ])
-
-spin_words( "Hey fellow warriors")
-
-# Tests
-assert spin_words("Happy New Year") == "yppaH New Year"
-assert spin_words("The great power is the great responsibility") == "The taerg rewop is the taerg ytilibisnopser"
-assert spin_words("this is uncommon") == "this is nommocnu"
