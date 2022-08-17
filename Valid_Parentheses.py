@@ -20,3 +20,10 @@ def valid_parentheses(string):
     except:
         return False
 
+# Tests
+assert valid_parentheses("hi(ds))(") == False
+assert valid_parentheses("()(()())") == True
+assert valid_parentheses("9(()(9)))()(") == False
+assert valid_parentheses(")") == False
+
+

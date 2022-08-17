@@ -9,4 +9,7 @@ def pig_it(text):
     splited = text.split()
     return " ".join([word[1:] + word[0] + "ay" if word[0].isalpha() else word[0]  for word in splited])
 
-pig_it('O tempora o mores !')
+# Tests
+assert pig_it('O tempora o mores !') == "Oay emporatay oay oresmay !"
+assert pig_it('School is cool') == "choolSay siay oolcay"
+assert pig_it('Over the rainbow bird is fly') == "verOay hetay ainbowray irdbay siay lyfay"

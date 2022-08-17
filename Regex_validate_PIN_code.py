@@ -6,9 +6,20 @@
 # "a234"   -->  false
 
 # Solution:
+
 import re
 def validate_pin(pin):
     if (re.findall(r"\D", pin) == []) and ((len(pin) == 4) or (len(pin) == 6)): 
         return True
     else :
         return False
+
+# Tests
+
+assert validate_pin("132452") == True
+assert validate_pin("1232") == True
+assert validate_pin("Ac2132") == False
+assert validate_pin("653") == False
+assert validate_pin("22132") == False
+assert validate_pin("3253.3") == False
+assert validate_pin("2!32") == False
