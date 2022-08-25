@@ -17,12 +17,17 @@
 import string
 
 def strip_comments(strng, markers):
-    strng = strng.split("\n")
     result = []
+    if markers == []:
+        return strng
+    else:
+        strng = strng.split("\n")
+        for i in strng: 
+            for marker in markers:
+                i = i.split(marker).pop(0).rstrip(" ")
+                if markers[-1] == marker:
+                    result.append(i)
+            
+        return "\n".join(result).replace("\t", "")
 
-    for i in strng:
-        for marker in markers:
-            i = i.split(marker).pop(0).rstrip(" ")
-            if markers[-1] == marker:
-                result.append(i)
-    return "\n".join(result)
+

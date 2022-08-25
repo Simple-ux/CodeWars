@@ -11,3 +11,6 @@ def test_2():
 
 def test_3():
     assert strip_comments('Jonny B $ Good\ntrue\n water$mellon\n', ['#', '$']) == "Jonny B\ntrue\n water\n"
+
+def test_3():
+    assert strip_comments('\t\n\navocados apples watermelons', ['.', '!', '-', ',', '=', '?', '#', "'", '@']) == "\n\navocados apples watermelons"
