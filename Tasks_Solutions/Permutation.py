@@ -23,4 +23,4 @@ def permut(s):
     for i in temp:
         str = "".join(i)
         result.append(str)
-    return set(result)
+    return list(set(result))
