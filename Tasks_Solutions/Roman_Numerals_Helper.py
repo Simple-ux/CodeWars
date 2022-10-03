@@ -10,6 +10,7 @@
 
 # In this kata 4 should be represented as IV, NOT as IIII (the "watchmaker's four").
 
+# SOLUTION:
 romanian = {
 'M' :	1000,
 'CM' : 900,
