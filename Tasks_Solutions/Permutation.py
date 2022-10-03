@@ -24,3 +24,5 @@ def permut(s):
         str = "".join(i)
         result.append(str)
     return list(set(result))
+
+print(permut('a'))
