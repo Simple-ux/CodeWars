@@ -1,6 +1,6 @@
 # CodeWars
 
-## My task solutions from CodeWars
+My task solutions from CodeWars
 
 Solutions in folder "Task_Solutions"
 
