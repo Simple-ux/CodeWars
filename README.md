@@ -9,5 +9,5 @@ To run tests:
 cd CodeWars/CodeWars_Tests
 ```
 ``` shell
-#pytest
+pytest
 ```
